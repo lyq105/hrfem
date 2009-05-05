@@ -2,7 +2,7 @@
 #include  "Equation.h"
 
 
-
+// this is the main function of this project
 
 int main()
 {
