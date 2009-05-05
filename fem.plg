@@ -1,0 +1,47 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: fem - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\LIYIQI~1\LOCALS~1\Temp\RSP15D.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/fem.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\MYProject\sr\fem\node4pal.cpp"
+"F:\MYProject\sr\fem\SolveSequence.cpp"
+"F:\MYProject\sr\fem\mainsolv.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\LIYIQI~1\LOCALS~1\Temp\RSP15D.tmp" 
+Creating temporary file "C:\DOCUME~1\LIYIQI~1\LOCALS~1\Temp\RSP15E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/fem.pdb" /debug /machine:I386 /out:"Debug/fem.exe" /pdbtype:sept 
+.\Debug\AbsMtx.obj
+.\Debug\Equation.obj
+.\Debug\mesh.obj
+.\Debug\node4pal.obj
+.\Debug\Point.obj
+.\Debug\SolveSequence.obj
+.\Debug\SparseMtxEx.obj
+.\Debug\mainsolv.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\LIYIQI~1\LOCALS~1\Temp\RSP15E.tmp"
+<h3>Output Window</h3>
+Compiling...
+node4pal.cpp
+f:\myproject\sr\fem\node4pal.cpp(144) : error C2064: term does not evaluate to a function
+f:\myproject\sr\fem\node4pal.cpp(176) : error C2664: 'GaussIntOnEage' : cannot convert parameter 3 from 'enum WhichEq' to 'enum WhichEage'
+        Conversion to enumeration type requires an explicit cast (static_cast, C-style cast or function-style cast)
+SolveSequence.cpp
+mainsolv.cpp
+F:\MYProject\sr\fem\mainsolv.cpp(13) : error C2660: 'FormMatrix' : function does not take 0 parameters
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+fem.exe - 3 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
