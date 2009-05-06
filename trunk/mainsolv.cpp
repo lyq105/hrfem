@@ -6,11 +6,7 @@
 
 int main()
 {
-
 	FEM fe;
-
 	fe.Initial("element","node");
-	fe.FormMatrix();
 	return 0;
-
 }
