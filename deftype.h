@@ -6,6 +6,8 @@ enum Coord{CoordX,CoordY,CoordZ};
 enum RefCoord{CoordKesi,CoordYita,CoordZita};
 enum WhichEq{One,Two,Three,Four,Five,Six,Seven,Eight,Nine,Ten};
 
+typedef void (*initfunc)(double,double);
+
 
 
 #endif//_DEFTYPE_H_
